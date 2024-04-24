@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width , initial-scale=1">
+ <!-- 
+   增加这句后，可以看到浏览器的DevTools面板的模拟移动设备状态的变化
+  -->
+ <style>
+    body{
+        
+        text-align: center;
+    }
+    header{
+        border:2px red solid;
+        height:10%;
+        background-color: blue;
+        color: white;
+    }
+    nav{
+        border:2px solid red ;
+        height:8%;
+    }
+    main{
+
+        height: 72%;
+        background-image: url("../lesson/bitCoin.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    footer{
+        border:2px red solid;
+        height:10%;
+        background-color: black;
+        color: white;
+    }
+    p#book{
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+    }
+    button{
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+ </style>
+
+</head> 
+<body>
+ <header id="book">
+    计算思维系列课程
+
+ </header>
+<nav>
+    <button>
+        导航1
+    </button>
+    <button>
+        导航2
+    </button>
+    <button>
+        导航3
+    </button>
+</nav>
+<main>
+
+</main>
+
+
+ <footer> 
+    <p id="statusInfo">
+        CopyRight from 廖蓓林 江西科技师范大学 2022--2025
+
+    </p>
+
+ </footer> 
+ <script>
+    //引入对象
+    var UI={};
+    //定义UI的属性
+        UI.deviceWidth=window.innerWidth;
+        UI.deviceHeight=window.innerHeight;
+        document.body.style.height=UI.deviceHeight+'px';
+        document.body.style.fontSize=UI.deviceWidth/29+'px';
+        document.body.style.fontSize=UI.deviceWidth/30+'px';
+
+ </script>
+ 
+</body>
+</html>
